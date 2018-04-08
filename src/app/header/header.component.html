@@ -1,0 +1,38 @@
+<div class="header">
+  <div class="header-content">
+    <div class="logo">
+      <div class="logo-img">
+        <img src="../../assets/logo.png">
+      </div>
+    </div>
+
+    <!-- Menu web -->
+    <div class="menu">
+      <ul>
+        <li routerLink='/seletores' routerLinkActive="active">Seletores</li>
+        <li routerLink='/variaveis' routerLinkActive="active">Variáveis</li>
+        <li routerLink='/interpolacao' routerLinkActive="active">Interpolação</li>
+        <li routerLink="/heranca" routerLinkActive="active">Herança</li>
+      </ul>
+    </div>
+
+    <!-- Menu mobile -->
+    <div class="menu-sm-btn" (click)='toogleMenu()'>
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+    <div class="logo-img-sm" [ngClass]="{'logo-img-sm-hide': openedMenu}">
+        <img src="../../assets/logo-sm.png">
+      </div>    
+    <div class="menu-sm" [ngClass]="{'menu-sm-aberto': openedMenu}">
+      <ul>
+          <li routerLink='/seletores' routerLinkActive="active-sm" (click)="clickedMenu()">Seletores</li>
+          <li routerLink='/variaveis' routerLinkActive="active-sm" (click)="clickedMenu()">Variáveis</li>
+          <li routerLink='/interpolacao' routerLinkActive="active-sm" (click)="clickedMenu()">Interpolação</li>
+          <li routerLink="/heranca" routerLinkActive="active-sm" (click)="clickedMenu()">Herança</li>
+        </ul>
+    </div>
+  </div>
+</div>
+

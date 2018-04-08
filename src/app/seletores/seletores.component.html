@@ -1,0 +1,102 @@
+<h1>Seletores</h1>
+<p>
+    Em Sass podemos utilizar mesmos seletores do CSS: de tipo, de classe e de id.
+    Neste tópico veremos algumas facilidades para tornar a escrita mais rápida utilizando seletores, propriedades aninhadas e pseudo-elementos.
+</p>
+
+<!-- Seletores aninhados -->
+<div class="subitem">
+  <h2>- Seletores Aninhados</h2>
+  <p>
+    Os seletores aninhados ou nested selectors, permitem que as regras CSS fiquem aninhadas uma dentro da outra.
+    Por exemplo:
+  </p>
+
+  <img src="../../assets/seletores-aninhados.png">
+
+  <p>O código CSS correspondente:</p>
+
+  <img src="../../assets/resultado-seletores-aninhados.png">
+
+  <p>Abaixo o resultado do código acima:</p>
+
+  <div class="nav">
+    <ul>
+      <li>Item 01</li>
+      <li>Item 02</li>
+      <li>Item 03</li>
+    </ul>
+  </div>
+
+  <p>
+      A regra interna aplica-se apenas dentro seletor da regra mais externa. Esta forma de escrita evita a repetição de seletores e faz com que blocos de CSS aninhados fiquem mais simples.
+  </p>
+
+  <p>
+  <b>Use os seletores aninhados com cautela!</b><br/>
+  Um grande problema ao utilizar muitos níveis de seletores é geração de código inútil que em vez de facilitar, pode dificultar seu trabalho criando regras muito específicas e aumentando o tamanho do arquivo CSS.
+  Para evitar problemas, recomenda-se o uso de no <b>máximo 3 aninhamentos</b>.
+  </p>
+</div>
+
+<hr/>
+
+<!-- Propriedades aninhadas -->
+<div class="subitem">
+  <h2>- Propriedades Aninhadas</h2>
+  
+  <p>
+    CSS tem algumas propriedades que utilizam "nome composto", por exemplo: font (font-family, font-size, font-weight...) e o border (border-style, border-width, border-color...), todos eles utilizam um prefixo em comum.
+    Em Sass, em vez de digitar as propriedades uma a uma, podemos aninhá-las, assim como fazemos com os seletores.
+    Basta escrever o prefixo uma vez e o nome das propriedades dentro dele. 
+  </p>
+  <p>
+    Por exemplo:
+  </p>
+
+  <img src="../../assets/propriedades-aninhadas.png">
+
+  <p>O código CSS correspondente:</p>
+
+  <img src="../../assets/resultado-propriedades-aninhadas.png">
+
+  <p>Abaixo o resultado do código acima:</p>
+
+  <div class="nav nav1">
+      <ul>
+        <li>Item 01</li>
+        <li>Item 02</li>
+        <li>Item 03</li>
+      </ul>
+    </div>
+
+</div>
+
+<hr/>
+
+<!-- Pseudo elementos -->
+<div class="subitem">
+  <h2>Pseudo elementos</h2>
+
+  <p>
+    O caractere <b>&</b> é utilizado fara fazer referência ao seletor pai, com ele também podemos aninhar os pseudo-elementos.
+  </p>
+  <p>
+    Exemplo: 
+  </p>
+
+  <img src="../../assets/pseudo-elementos.png">
+
+  <p>O código CSS correspondente:</p>
+
+  <img src="../../assets/resultado-pseudo-elementos.png">
+
+  <p>Outros exemplos de utilização do <b>&</b>:</p>
+
+  <img src="../../assets/pseudo-elementos-outros-exemplos.png">
+
+  <p>Será compilado para:</p>
+
+  <img src="../../assets/resultado-pseudo-elementos-outros-exemplos.png">
+
+</div>

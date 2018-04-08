@@ -1,0 +1,10 @@
+$name: destaque;
+$attr: font;
+
+p.#{$name} {
+  #{$attr}-style: italic;
+
+  $font-size: 12px;
+  $line-height: 30px;
+  #{$attr}: #{$font-size}/#{$line-height};
+}
