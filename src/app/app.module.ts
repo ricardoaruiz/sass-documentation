@@ -10,6 +10,7 @@ import { SeletoresComponent } from './seletores/seletores.component';
 import { VariaveisComponent } from './variaveis/variaveis.component';
 import { InterpolacaoComponent } from './interpolacao/interpolacao.component';
 import { HerancaComponent } from './heranca/heranca.component';
+import { OperacoesComponent } from './operacoes/operacoes.component';
 
 
 @NgModule({
@@ -20,7 +21,8 @@ import { HerancaComponent } from './heranca/heranca.component';
     SeletoresComponent,
     VariaveisComponent,
     InterpolacaoComponent,
-    HerancaComponent
+    HerancaComponent,
+    OperacoesComponent
   ],
   imports: [
     BrowserModule,

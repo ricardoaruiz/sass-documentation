@@ -6,6 +6,7 @@ import { SeletoresComponent } from '../seletores/seletores.component';
 import { VariaveisComponent } from '../variaveis/variaveis.component';
 import { InterpolacaoComponent } from '../interpolacao/interpolacao.component';
 import { HerancaComponent } from '../heranca/heranca.component';
+import { OperacoesComponent } from '../operacoes/operacoes.component';
 
 const appRoutes: Routes = [
   {
@@ -23,6 +24,10 @@ const appRoutes: Routes = [
   {
     path: 'heranca',
     component: HerancaComponent
+  },
+  {
+    path: 'operacoes',
+    component: OperacoesComponent
   }
 ];
 
