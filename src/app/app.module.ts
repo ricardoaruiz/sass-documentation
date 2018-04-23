@@ -11,6 +11,7 @@ import { VariaveisComponent } from './variaveis/variaveis.component';
 import { InterpolacaoComponent } from './interpolacao/interpolacao.component';
 import { HerancaComponent } from './heranca/heranca.component';
 import { OperacoesComponent } from './operacoes/operacoes.component';
+import { MixinsComponent } from './mixins/mixins.component';
 
 
 @NgModule({
@@ -22,7 +23,8 @@ import { OperacoesComponent } from './operacoes/operacoes.component';
     VariaveisComponent,
     InterpolacaoComponent,
     HerancaComponent,
-    OperacoesComponent
+    OperacoesComponent,
+    MixinsComponent
   ],
   imports: [
     BrowserModule,

@@ -7,6 +7,7 @@ import { VariaveisComponent } from '../variaveis/variaveis.component';
 import { InterpolacaoComponent } from '../interpolacao/interpolacao.component';
 import { HerancaComponent } from '../heranca/heranca.component';
 import { OperacoesComponent } from '../operacoes/operacoes.component';
+import { MixinsComponent } from '../mixins/mixins.component';
 
 const appRoutes: Routes = [
   {
@@ -28,6 +29,10 @@ const appRoutes: Routes = [
   {
     path: 'operacoes',
     component: OperacoesComponent
+  },
+  {
+    path: 'mixins',
+    component: MixinsComponent
   }
 ];
 
@@ -36,7 +41,7 @@ const appRoutes: Routes = [
     CommonModule,
     RouterModule.forRoot(appRoutes)
   ],
-  exports:[
+  exports: [
     RouterModule
   ],
   declarations: []
